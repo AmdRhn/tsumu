@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tsumu</title>
+</head>
+<body>
+<style>
+*{
+    transition: all;
+}
+    body{
+         font-family: 'Roboto', sans-serif;
+        color: #374151;
+    }
+    h1,h2
+    {
+          font-family: 'Noto Serif JP', serif;
+          color: #111827;
+    }
+</style>
+<header class="bg-white shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
+    <div class="flex items-center justify-between max-w-[1264px] px-4 h-[64px] mx-auto">
+        <!-- logo -->
+        <div>
+            <img src="assets/logo.svg" alt="">
+        </div>
+
+        <div>
+            <nav class="flex items-center gap-6 hidden md:flex">
+                <a href="#">サービス紹介</a>
+                <a href="#">制作の流れ</a>
+                <a href="#">制作事例</a>
+                <a href="#">料金プラン</a>
+                <a href="#" class="bg-[#F78211] text-white px-3 py-[8px] rounded-[16px]">お問い合わせ</a>
+
+            </nav>
+        </div>
+
+        <div class="md:hidden">
+            <img src="assets/menu-btn.svg" alt="" class="" id="menu-btn">
+            <img src="assets/close.svg" alt="" class="hidden" id="close-btn">
+        </div>
+
+        
+    </div>
+</header>
+
+<!-- mobile dropdown menu -->
+          <div class="fixed top-[66px] bg-white z-[999] w-full inset-x-0 p-4 hidden shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1),_0_10px_15px_-3px_rgba(0,0,0,0.1)]" id="mobile-menu">
+            <nav class="flex flex-col justify-center gap-6 md:hidden text-[14px] w-full">
+                <a href="#">サービス紹介</a>
+                <a href="#">制作の流れ</a>
+                <a href="#">制作事例</a>
+                <a href="#">料金プラン</a>
+                <a href="#" class=" w-fit">お問い合わせ</a>
+
+            </nav>
+        </div>
+
+
+  <section class=" py-[30px] md:py-16 bg-[linear-gradient(135deg,_#FFFBEB_0%,_#FFFFFF_50%,_#FFF7ED_100%)]">
+<span class="text-[14px] font-bold text-[#F78211] text-center block mb-2">CONTACT</span>
+    <h2 class="font-bold text-[36px] md:text-[48px] text-center px-4 md:px-0" >お問い合わせ</h2>
+    <div class=" flex justify-center" >
+    <span class="bg-[#F78211] h-[4px] w-[80px] text-center mt-5"></span>
+    </div>
+  <p class="text-[20px] text-[#4B5563] text-center mt-8 px-4">自分史漫画の制作に関するご相談やご質問など、</p>
+<p class="text-[20px] text-[#4B5563] text-center px-4">お気軽にお問い合わせください。</p>
+   
+
+  </section>
+
+  <section class="py-20">
+
+    <div class="bg-[linear-gradient(135deg,_#FFFBEB_0%,_#FFF7ED_100%)]  max-w-[720px] mx-4 md:mx-auto p-8 md:p-12 rounded-[16px] shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]">
+              <h2 class="text-[#111827] text-[24px] md:text-[30px] font-bold text-center pb-8">ご相談フォーム</h2>
+
+              <div class=" space-y-7">
+        
+        <div>
+            <label class="block text-[14px] font-bold text-[#111827] mb-2">
+                お名前 <span class="text-[#E54D4D] ml-0.5">*</span>
+            </label>
+            <input type="text" placeholder="山田 太郎" 
+                class="w-full py-3 px-4 rounded-[8px] border border-[#D1D5DB] bg-white placeholder-[#B0B0B0] focus:outline-none focus:ring-1 focus:ring-gray-400">
+        </div>
+
+        <div>
+            <label class="block text-[14px] font-bold text-[#111827] mb-2">
+                メールアドレス <span class="text-[#E54D4D] ml-0.5">*</span>
+            </label>
+            <input type="email" placeholder="example@email.com" 
+                class="w-full py-3 px-4 rounded-lg border border-[#D1D5DB] bg-white placeholder-[#B0B0B0] focus:outline-none focus:ring-1 focus:ring-gray-400">
+        </div>
+
+        <div>
+            <label class="block text-[14px] font-bold text-[#111827] mb-2">
+                電話番号
+            </label>
+            <input type="tel" placeholder="090-1234-5678" 
+                class="w-full py-3 px-4 rounded-[8px] border border-[#D1D5DB] bg-white placeholder-[#B0B0B0] focus:outline-none focus:ring-1 focus:ring-gray-400">
+        </div>
+
+        <div>
+            <label class="block text-[14px] font-bold text-[#111827] mb-2">
+                ご予算
+            </label>
+            <div class="relative">
+                <select class="w-full py-3 px-4 rounded-[8px] border border-[#D1D5DB] bg-white appearance-none text-[#111827] focus:outline-none">
+                    <option value="">選択してください</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-4 flex items-center">
+                    <svg class="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <label class="block text-[14px] font-bold text-[#111827] mb-2">
+                ご希望のページ数
+            </label>
+            <div class="relative">
+                <select class="w-full py-3 px-4 rounded-[8px] border border-[#D1D5DB] bg-white appearance-none text-[#111827] focus:outline-none">
+                    <option value="">選択してください</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-4 flex items-center">
+                    <svg class="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <label class="block text-[14px] font-bold text-[#111827] mb-2">
+                ご希望の形式
+            </label>
+            <div class="relative">
+                <select class="w-full py-3 px-4 rounded-[8px] border border-[#D1D5DB] bg-white appearance-none text-[#111827] focus:outline-none">
+                    <option value="">選択してください</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-4 flex items-center">
+                    <svg class="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <label class="block text-[14px] font-bold text-[#111827] mb-2">
+                お問い合わせ内容 <span class="text-[#E54D4D] ml-0.5">*</span>
+            </label>
+            <textarea 
+                class="w-full h-[180px] p-4 rounded-[8px] border border-[#D1D5DB] bg-white placeholder-[#A0AEC0] text-[14px] leading-relaxed focus:outline-none focus:ring-1 focus:ring-gray-400"
+                placeholder="ご相談内容やご質問など、お気軽にお書きください。&#10;&#10;例：&#10;・父の人生を漫画にして家族に残したい&#10;・制作の流れや期間について詳しく知りたい&#10;・見積もりをお願いしたい"></textarea>
+            <p class="text-[12px] text-[#6B7280] mt-1">0/500文字</p>
+        </div>
+ <button class="bg-[linear-gradient(90deg,_#D97706_0%,_#EA580C_100%)] text-[14px] md:text-[16px] font-bold text-white py-4 px-8 rounded-[8px] w-full ">
+送信する
+ </button>
+              </div>
+    </div>
+
+      <div class="max-w-[720px] px-4 min-[896px]:px-0  grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 mx-auto">
+
+
+    <div class="flex flex-col gap-4 items-center p-6 rounded-[16px] ">
+        <div class="size-[64px] flex justify-center items-center rounded-full bg-[#FEF3C7]">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.35999 3H20.64C20.9088 3 21.136 3.09667 21.3216 3.29C21.5072 3.48333 21.6 3.72 21.6 4V20C21.6 20.28 21.5072 20.5167 21.3216 20.71C21.136 20.9033 20.9088 21 20.64 21H3.35999C3.09119 21 2.86399 20.9033 2.67839 20.71C2.49279 20.5167 2.39999 20.28 2.39999 20V4C2.39999 3.72 2.49279 3.48333 2.67839 3.29C2.86399 3.09667 3.09119 3 3.35999 3ZM19.68 7.24L12.0768 14.34L4.31999 7.22V19H19.68V7.24ZM4.81919 5L12.0576 11.66L19.2 5H4.81919Z" fill="#D97706"/>
+            </svg>
+
+
+        </div>
+
+        <p class="font-bold text-[14px] md:text-[16px] text-[#111827] font-['Noto_Serif_JP']">メール</p>
+        <p class="text-[#4B5563] text-[14px] text-center">3営業日以内に <br class="hidden md:block">
+            ご返信いたします
+        </p>
+    </div>
+    <div class="flex flex-col gap-4 items-center p-6 rounded-[16px] ">
+        <div class="size-[64px] flex justify-center items-center rounded-full bg-[#FEF3C7]">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C10.6944 22 9.44642 21.74 8.25602 21.22C7.11682 20.7133 6.10242 19.9967 5.21282 19.07C4.32322 18.1433 3.63522 17.0867 3.14882 15.9C2.64962 14.66 2.40002 13.36 2.40002 12C2.40002 10.64 2.64962 9.34 3.14882 8.1C3.63522 6.91333 4.32322 5.85667 5.21282 4.93C6.10242 4.00333 7.11682 3.28667 8.25602 2.78C9.44642 2.26 10.6944 2 12 2C13.3056 2 14.5536 2.26 15.744 2.78C16.8832 3.28667 17.8976 4.00333 18.7872 4.93C19.6768 5.85667 20.3648 6.91333 20.8512 8.1C21.3504 9.34 21.6 10.64 21.6 12C21.6 13.36 21.3504 14.66 20.8512 15.9C20.3648 17.0867 19.6768 18.1433 18.7872 19.07C17.8976 19.9967 16.8832 20.7133 15.744 21.22C14.5536 21.74 13.3056 22 12 22ZM12 20C13.3952 20 14.688 19.6333 15.8784 18.9C17.0304 18.1933 17.9456 17.24 18.624 16.04C19.328 14.8 19.68 13.4533 19.68 12C19.68 10.5467 19.328 9.2 18.624 7.96C17.9456 6.76 17.0304 5.80667 15.8784 5.1C14.688 4.36667 13.3952 4 12 4C10.6048 4 9.31202 4.36667 8.12162 5.1C6.96962 5.80667 6.05442 6.76 5.37602 7.96C4.67202 9.2 4.32002 10.5467 4.32002 12C4.32002 13.4533 4.67202 14.8 5.37602 16.04C6.05442 17.24 6.96962 18.1933 8.12162 18.9C9.31202 19.6333 10.6048 20 12 20ZM12.96 12H16.8V14H11.04V7H12.96V12Z" fill="#D97706"/>
+</svg>
+
+
+        </div>
+
+        <p class="font-bold text-[14px] md:text-[16px] text-[#111827] font-['Noto_Serif_JP']">営業時間</p>
+        <p class="text-[#4B5563] text-[14px] text-center">平日 10:00〜18:00 <br class="hidden md:block">
+            （土日祝日を除く）
+        </p>
+    </div>
+
+
+        <div class="flex flex-col gap-4 items-center p-6 rounded-[16px] ">
+        <div class="size-[64px] flex justify-center items-center rounded-full bg-[#FEF3C7]">
+         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C10.6944 22 9.44642 21.74 8.25602 21.22C7.11682 20.7133 6.10242 19.9967 5.21282 19.07C4.32322 18.1433 3.63522 17.0867 3.14882 15.9C2.64962 14.66 2.40002 13.36 2.40002 12C2.40002 10.64 2.64962 9.34 3.14882 8.1C3.63522 6.91333 4.32322 5.85667 5.21282 4.93C6.10242 4.00333 7.11682 3.28667 8.25602 2.78C9.44642 2.26 10.6944 2 12 2C13.3056 2 14.5536 2.26 15.744 2.78C16.8832 3.28667 17.8976 4.00333 18.7872 4.93C19.6768 5.85667 20.3648 6.91333 20.8512 8.1C21.3504 9.34 21.6 10.64 21.6 12C21.6 13.36 21.3504 14.66 20.8512 15.9C20.3648 17.0867 19.6768 18.1433 18.7872 19.07C17.8976 19.9967 16.8832 20.7133 15.744 21.22C14.5536 21.74 13.3056 22 12 22ZM12 20C13.3952 20 14.688 19.6333 15.8784 18.9C17.0304 18.1933 17.9456 17.24 18.624 16.04C19.328 14.8 19.68 13.4533 19.68 12C19.68 10.5467 19.328 9.2 18.624 7.96C17.9456 6.76 17.0304 5.80667 15.8784 5.1C14.688 4.36667 13.3952 4 12 4C10.6048 4 9.31202 4.36667 8.12162 5.1C6.96962 5.80667 6.05442 6.76 5.37602 7.96C4.67202 9.2 4.32002 10.5467 4.32002 12C4.32002 13.4533 4.67202 14.8 5.37602 16.04C6.05442 17.24 6.96962 18.1933 8.12162 18.9C9.31202 19.6333 10.6048 20 12 20ZM11.04 15H12.96V17H11.04V15ZM12.96 13.36V14H11.04V12.5C11.04 12.22 11.1328 11.9833 11.3184 11.79C11.504 11.5967 11.7312 11.5 12 11.5C12.3968 11.5 12.736 11.3533 13.0176 11.06C13.2992 10.7667 13.44 10.4133 13.44 10C13.44 9.58667 13.2992 9.23333 13.0176 8.94C12.736 8.64667 12.3968 8.5 12 8.5C11.6544 8.5 11.3504 8.61333 11.088 8.84C10.8256 9.06667 10.656 9.35333 10.5792 9.7L8.69762 9.32C8.80002 8.78667 9.01122 8.30667 9.33122 7.88C9.65122 7.45333 10.0416 7.11667 10.5024 6.87C10.9632 6.62333 11.4624 6.5 12 6.5C12.6144 6.5 13.1776 6.65667 13.6896 6.97C14.2016 7.28333 14.608 7.70667 14.9088 8.24C15.2096 8.77333 15.36 9.36 15.36 10C15.36 10.7867 15.136 11.4867 14.688 12.1C14.24 12.7133 13.664 13.1333 12.96 13.36Z" fill="#D97706"/>
+</svg>
+
+
+
+
+        </div>
+
+        <p class="font-bold text-[14px] md:text-[16px] text-[#111827] font-['Noto_Serif_JP']">ご相談無料</p>
+        <p class="text-[#4B5563] text-[14px] text-center">お見積もりは <br class="hidden md:block">
+         無料です
+        </p>
+    </div>
+    </div>
+  </section>
+  <section class=" py-16 bg-[linear-gradient(135deg,_#FFFBEB_0%,_#FFFFFF_50%,_#FFF7ED_100%)]">
+    <h2 class="font-bold text-[24px] md:text-[30px] text-center px-4 md:px-0 mb-12" >会社概要</h2>
+  
+    <div class=" max-w-[720px] md:mx-auto p-8 md:p-12 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)] bg-white rounded-[16px] mx-4">
+        
+        <div class="mb-6">
+            <p class="text-[14px] font-bold text-[#6B7280] mb-2 font-['Noto_Serif_JP']">会社名</p>
+            <h2 class="text-[18px]  text-[#111827]">合同会社にこのて</h2>
+        </div>
+
+        <hr class="border-[#E5E7EB] mb-8">
+
+        <div class="mb-6">
+            <p class="text-[14px] font-bold text-[#6B7280] mb-2 font-['Noto_Serif_JP']">事業内容</p>
+            <div class="text-[16px] text-[#111827] leading-relaxed ">
+                <p>自分史漫画制作サービス</p>
+                <p>人生・資産継承サポート事業</p>
+                <p>メモリアルコンテンツ制作事業</p>
+            </div>
+        </div>
+
+        <hr class="border-[#E5E7EB] mb-8">
+
+        <div class="mb-6">
+            <p class="text-[14px] font-bold text-[#6B7280] mb-2 font-['Noto_Serif_JP']">代表者名</p>
+            <h2 class="text-[18px]  text-[##111827]">代表社員　石川 拓</h2>
+        </div>
+
+               <hr class="border-[#E5E7EB] mb-8">
+
+
+        <div class="space-y-6">
+            <p class="text-[14px] font-bold text-[#6B7280] mb-2 font-['Noto_Serif_JP']">ごあいさつ</p>
+            
+            <div class="text-[16px] text-[##111827]  space-y-4">
+                <p>この度は、紡 -TSUMU- のウェブサイトをご覧いただき、誠にありがとうございます。</p>
+                
+                <p>
+                    私たちは、大切な人生の物語を次世代へ紡ぐお手伝いをしています。一人ひとりの人生には、かけがえのない経験や想いが詰まっています。それらを漫画という形で残すことで、ご家族の絆をより深め、世代を超えて受け継がれる宝物となることを願っております。
+                </p>
+
+                <p>お客様の大切な物語を、心を込めて形にさせていただきます。どうぞお気軽にご相談ください。</p>
+            </div>
+
+            <div class="text-right pt-4">
+                <p class="text-[16px] text-[#374151]">代表社員　石川 拓</p>
+            </div>
+        </div>
+
+    
+    </div>
+   
+
+  </section>
+
+  <footer class="bg-[#111827] ">
+
+    <div class="max-w-[1280px] mx-auto px-4 py-12">
+        <div>
+            <h3 class="font-bold text-[24px] text-white font-['Noto_Serif_JP']">
+                <span class="text-[#F78211]">紡</span>
+                -TSUMU-
+            </h3>
+
+            <p class="text-[14px] text-[#9CA3AF] mt-4 ">
+                人生・資産を家族へ遺し、<br>
+紡ぐ物語制作サービス
+            </p>
+            <div class="py-8 border-b border-[#1F2937] flex-wrap flex gap-6 text-[14px] text-[#9CA3AF]">
+
+                <a href="">サービス紹介</a>
+                <a href="">制作の流れ</a>
+                <a href="">制作事例</a>
+                <a href="">料金プラン</a>
+                <a href="">お問い合わせ</a>
+                <a href="">プライバシーポリシー</a>
+    
+
+            </div>
+
+            <span class="text-[14px] text-[#9CA3AF] text-center block mt-8">© 2024 紡 -TSUMU-. All rights reserved. | ​
+Powered by Readdy</span>
+        </div>
+
+    </div>
+  </footer>
+<script>
+            const menubtn=document.getElementById('menu-btn');
+            const close=document.getElementById('close-btn');
+            const mobileMenu=document.getElementById('mobile-menu');
+
+            menubtn.addEventListener('click',()=>{
+
+                mobileMenu.classList.toggle('hidden');
+                close.classList.toggle('hidden');
+                menubtn.classList.add('hidden');
+            })
+
+            close.addEventListener('click',()=>{
+
+                mobileMenu.classList.toggle('hidden');
+                menubtn.classList.toggle('hidden');
+                close.classList.add('hidden');
+            })
+  </script>
+</body>
+</html>

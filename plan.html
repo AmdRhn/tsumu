@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tsumu</title>
+</head>
+<body>
+<style>
+*{
+    transition: all;
+}
+    body{
+         font-family: 'Roboto', sans-serif;
+        color: #374151;
+    }
+    h1,h2
+    {
+          font-family: 'Noto Serif JP', serif;
+          color: #111827;
+    }
+</style>
+<header class="bg-white shadow-[0_1px_2px_rgba(0,0,0,0.05)]">
+    <div class="flex items-center justify-between max-w-[1264px] px-4 h-[64px] mx-auto">
+        <!-- logo -->
+        <div>
+            <img src="assets/logo.svg" alt="">
+        </div>
+
+        <div>
+            <nav class="flex items-center gap-6 hidden md:flex">
+                <a href="#">サービス紹介</a>
+                <a href="#">制作の流れ</a>
+                <a href="#">制作事例</a>
+                <a href="#">料金プラン</a>
+                <a href="#" class="bg-[#F78211] text-white px-3 py-[8px] rounded-[16px]">お問い合わせ</a>
+
+            </nav>
+        </div>
+
+        <div class="md:hidden">
+            <img src="assets/menu-btn.svg" alt="" class="" id="menu-btn">
+            <img src="assets/close.svg" alt="" class="hidden" id="close-btn">
+        </div>
+
+        
+    </div>
+</header>
+
+<!-- mobile dropdown menu -->
+          <div class="fixed top-[66px] bg-white z-[999] w-full inset-x-0 p-4 hidden shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1),_0_10px_15px_-3px_rgba(0,0,0,0.1)]" id="mobile-menu">
+            <nav class="flex flex-col justify-center gap-6 md:hidden text-[14px] w-full">
+                <a href="#">サービス紹介</a>
+                <a href="#">制作の流れ</a>
+                <a href="#">制作事例</a>
+                <a href="#">料金プラン</a>
+                <a href="#" class=" w-fit">お問い合わせ</a>
+
+            </nav>
+        </div>
+
+
+  <section class="py-[30px] md:py-16 bg-[linear-gradient(135deg,_#FFFBEB_0%,_#FFFFFF_50%,_#FFF7ED_100%)]">
+<span class="text-[14px] font-bold text-[#F78211] text-center block mb-2">PLAN</span>
+    <h2 class="font-bold text-[36px] md:text-[48px] text-center px-4 md:px-0" >料金について</h2>
+    <div class=" flex justify-center" >
+    <span class="bg-[#F78211] h-[4px] w-[80px] text-center mt-5"></span>
+    </div>
+  <p class="text-[20px] text-[#4B5563] text-center mt-8 px-4">お客様の大切な人生を、世界に一つだけの漫画として形にします。</p>
+<p class="text-[20px] text-[#4B5563] text-center px-4">フルオーダーメイドだからこそ実現できる、特別な価値をお届けいたします。</p>
+   
+
+  </section>
+
+  <section class=" pb-20 pt-[30px] md:py-20">
+ <h2 class="text-[#111827] text-[30px] md:text-[36px] font-bold text-center pb-4">モデルケース</h2>
+ <p class="text-[14px] md:text-[16px] text-[#4B5563] text-center  px-4">フルオーダーメイドのため、制作内容・ボリュームにより費用が変動します。</p>
+<p class="text-[14px] md:text-[16px] text-[#4B5563] text-center px-4">以下は標準的な制作内容の目安です</p>
+    <div class="bg-[linear-gradient(135deg,_#FFF7ED_0%,_#FFFFFF_100%)] border-[#F78211] border-[2px]
+ max-w-[896px] mx-4 md:mx-auto p-8 md:p-12 rounded-[16px] mt-12 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]">
+             
+              <span class="text-white font-bold block mx-auto w-fit text-[14px] px-6 py-2 bg-[#F78211] rounded-full mb-6">標準プラン</span>
+              <h3 class="font-bold text-[45px] md:text-[60px] text-[#111827] flex items-center justify-center mb-4 ">150万円 <span class="text-[24px] font-[400] text-[#4B5563]">〜</span></h3>
+              <span class="text-[14px] md:text-[16px] font-[400] text-[#4B5563] block text-center">（税込）</span>
+
+              <div class="bg-white rounded-[16px] shadow-[0_1px_2px_0_rgba(0,0,0,0.05)] p-8 md:p-10 mt-10 ">
+
+                <span class="text-[20px] font-bold font-['Inter'] text-[#111827] block text-center mb-6">制作内容</span>
+                <div class="grid  grid-cols-1 md:grid-cols-3 gap-y-6">
+
+
+                 <div class="flex items-center gap-4 text-[#374151] text-[17px] md:text-[18px]">
+            <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M9.96485 19.18L18.7969 9.98002L20.1409 11.4L9.96485 22.02L3.85925 15.64L5.20325 14.24L9.96485 19.18Z" fill="#F78211"/>
+           </svg>
+
+            10〜15ページ
+                </div>
+                 <div class="flex items-center gap-4 text-[#374151] text-[18px]">
+            <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M9.96485 19.18L18.7969 9.98002L20.1409 11.4L9.96485 22.02L3.85925 15.64L5.20325 14.24L9.96485 19.18Z" fill="#F78211"/>
+           </svg>
+
+            カラー or モノクロ
+                </div>
+
+                 <div class="flex items-center gap-4 text-[#374151] text-[18px]">
+            <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M9.96485 19.18L18.7969 9.98002L20.1409 11.4L9.96485 22.02L3.85925 15.64L5.20325 14.24L9.96485 19.18Z" fill="#F78211"/>
+           </svg>
+
+            シナリオ制作
+                </div>
+
+ <div class="flex items-center gap-4 text-[#374151] text-[18px]">
+            <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M9.96485 19.18L18.7969 9.98002L20.1409 11.4L9.96485 22.02L3.85925 15.64L5.20325 14.24L9.96485 19.18Z" fill="#F78211"/>
+           </svg>
+
+            人生インタビュー
+                </div>
+                 <div class="flex items-center gap-4 text-[#374151] text-[18px]">
+            <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M9.96485 19.18L18.7969 9.98002L20.1409 11.4L9.96485 22.02L3.85925 15.64L5.20325 14.24L9.96485 19.18Z" fill="#F78211"/>
+           </svg>
+
+            漫画制作
+                </div>
+
+                 <div class="flex items-center gap-4 text-[#374151] text-[18px]">
+            <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M9.96485 19.18L18.7969 9.98002L20.1409 11.4L9.96485 22.02L3.85925 15.64L5.20325 14.24L9.96485 19.18Z" fill="#F78211"/>
+           </svg>
+
+            軽微修正対応込み
+                </div>
+                </div>
+              </div>
+               <p class="text-[#4B5563] text-[14px] text-center mt-6">※ 制作内容やボリュームにより費用は変動いたします</p>
+                <p class="text-[#4B5563] text-[14px] text-center">※ 詳細なお見積りは、ヒアリング後にご提示いたします</p>
+    </div>
+
+      
+  </section>
+
+  <section class="pb-20">
+ <h2 class="text-[#111827] text-[24px] md:text-[36px] font-bold text-center pb-4">オプション</h2>
+ <p class="text-[14px] md:text-[16px] text-[#4B5563] text-center  px-4">お客様のご要望に合わせて、さまざまなオプションをご用意しております。</p>
+<p class="text-[14px] md:text-[16px] text-[#4B5563] text-center px-4">費用は別途お見積りいたします。</p>
+
+
+ <div class="max-w-[896px] px-4 min-[896px]:px-0  grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 mx-auto">
+
+
+    <div class="flex flex-col gap-4 items-center p-6 rounded-[16px] border-[#F3F4F6] border shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]">
+        <div class="size-[56px] flex justify-center items-center rounded-full bg-[#F782111A]">
+            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M18.6096 5H6.6034V25H23.4121V10H18.6096V5ZM4.20215 3.75C4.20215 3.4 4.31821 3.10417 4.55033 2.8625C4.78245 2.62083 5.0666 2.5 5.40277 2.5H19.8103L25.8134 8.75V26.25C25.8134 26.5833 25.6973 26.875 25.4652 27.125C25.2331 27.375 24.9489 27.5 24.6128 27.5H5.40277C5.0666 27.5 4.78245 27.3792 4.55033 27.1375C4.31821 26.8958 4.20215 26.6 4.20215 26.25V3.75ZM13.8071 13.75V10H16.2084V13.75H19.8103V16.25H16.2084V20H13.8071V16.25H10.2053V13.75H13.8071Z" fill="#F78211"/>
+             </svg>
+
+
+        </div>
+
+        <p class="font-bold text-[18px] text-[#111827] font-['Noto_Serif_JP']">ページ追加</p>
+        <p class="text-[#4B5563] text-[14px] text-center">より詳しく人生を描きたい方へ。<br>
+            ページ数を追加できます。
+            
+        </p>
+    </div>
+
+  <div class="flex flex-col gap-4 items-center p-6 rounded-[16px] border-[#F3F4F6] border shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]">
+        <div class="size-[56px] flex justify-center items-center rounded-full bg-[#F782111A]">
+            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.0077 2.5C16.6406 2.5 18.2014 2.79167 19.6902 3.375C21.1149 3.94167 22.3836 4.7375 23.4961 5.7625C24.6087 6.7875 25.4692 7.95833 26.0775 9.275C26.7018 10.6583 27.014 12.1 27.014 13.6C27.014 14.8667 26.7098 16.0417 26.1015 17.125C25.5092 18.1583 24.7088 18.9833 23.7002 19.6C22.6757 20.2333 21.5551 20.55 20.3385 20.55H17.9853C17.425 20.55 16.9527 20.7542 16.5685 21.1625C16.1843 21.5708 15.9922 22.0667 15.9922 22.65C15.9922 23.1667 16.1603 23.625 16.4965 24.025C16.8327 24.425 17.0008 24.8917 17.0008 25.425C17.0008 25.9917 16.8047 26.4792 16.4124 26.8875C16.0202 27.2958 15.552 27.5 15.0077 27.5C13.3749 27.5 11.8141 27.175 10.3253 26.525C8.90054 25.8917 7.63188 24.9958 6.5193 23.8375C5.40672 22.6792 4.54627 21.3583 3.93795 19.875C3.31363 18.325 3.00146 16.7 3.00146 15C3.00146 13.3 3.31363 11.675 3.93795 10.125C4.54627 8.64167 5.40672 7.32083 6.5193 6.1625C7.63188 5.00417 8.90054 4.10833 10.3253 3.475C11.8141 2.825 13.3749 2.5 15.0077 2.5ZM13.591 22.65C13.591 21.8167 13.7871 21.05 14.1793 20.35C14.5715 19.65 15.1038 19.0917 15.7761 18.675C16.4485 18.2583 17.1848 18.05 17.9853 18.05H20.3385C21.1069 18.05 21.8193 17.85 22.4756 17.45C23.1319 17.05 23.6522 16.5125 24.0364 15.8375C24.4206 15.1625 24.6127 14.4167 24.6127 13.6C24.6127 12.0667 24.1805 10.6333 23.316 9.3C22.4676 8 21.323 6.96667 19.8823 6.2C18.3935 5.4 16.7726 5 15.0197 5C13.2668 5 11.646 5.45833 10.1572 6.375C8.71644 7.25833 7.57184 8.45 6.7234 9.95C5.84294 11.5 5.40271 13.1833 5.40271 15C5.40271 16.7167 5.79492 18.325 6.57933 19.825C7.34773 21.275 8.39627 22.45 9.72497 23.35C11.0857 24.2833 12.5744 24.825 14.1913 24.975C13.7911 24.2417 13.591 23.4667 13.591 22.65ZM9.6049 15C9.10864 15 8.68442 14.8167 8.33224 14.45C7.98006 14.0833 7.80397 13.6417 7.80397 13.125C7.80397 12.6083 7.98006 12.1667 8.33224 11.8C8.68442 11.4333 9.10864 11.25 9.6049 11.25C10.1012 11.25 10.5254 11.4333 10.8776 11.8C11.2297 12.1667 11.4058 12.6083 11.4058 13.125C11.4058 13.6417 11.2297 14.0833 10.8776 14.45C10.5254 14.8167 10.1012 15 9.6049 15ZM20.4105 15C19.9143 15 19.49 14.8167 19.1379 14.45C18.7857 14.0833 18.6096 13.6417 18.6096 13.125C18.6096 12.6083 18.7857 12.1667 19.1379 11.8C19.49 11.4333 19.9143 11.25 20.4105 11.25C20.9068 11.25 21.331 11.4333 21.6832 11.8C22.0354 12.1667 22.2115 12.6083 22.2115 13.125C22.2115 13.6417 22.0354 14.0833 21.6832 14.45C21.331 14.8167 20.9068 15 20.4105 15ZM15.0077 11.25C14.5115 11.25 14.0872 11.0667 13.7351 10.7C13.3829 10.3333 13.2068 9.89167 13.2068 9.375C13.2068 8.85833 13.3829 8.41667 13.7351 8.05C14.0872 7.68333 14.5115 7.5 15.0077 7.5C15.504 7.5 15.9282 7.68333 16.2804 8.05C16.6326 8.41667 16.8087 8.85833 16.8087 9.375C16.8087 9.89167 16.6326 10.3333 16.2804 10.7C15.9282 11.0667 15.504 11.25 15.0077 11.25Z" fill="#F78211"/>
+</svg>
+
+
+        </div>
+
+        <p class="font-bold text-[18px] text-[#111827] font-['Noto_Serif_JP']">フルカラー化</p>
+        <p class="text-[#4B5563] text-[14px] text-center">モノクロプランをフルカラーに変更<br>し、より鮮やかな作品に。
+            
+        </p>
+    </div>
+
+
+     <div class="flex flex-col gap-4 items-center p-6 rounded-[16px] border-[#F3F4F6] border shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]">
+        <div class="size-[56px] flex justify-center items-center rounded-full bg-[#F782111A]">
+            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.8134 22.5H7.80402C7.46785 22.5 7.1837 22.6208 6.95158 22.8625C6.71946 23.1042 6.6034 23.4 6.6034 23.75C6.6034 24.1 6.71946 24.3958 6.95158 24.6375C7.1837 24.8792 7.46785 25 7.80402 25H25.8134V27.5H7.80402C7.14768 27.5 6.54337 27.3333 5.99108 27C5.43879 26.6667 5.00257 26.2125 4.6824 25.6375C4.36223 25.0625 4.20215 24.4333 4.20215 23.75V5C4.20215 4.55 4.3102 4.13333 4.52632 3.75C4.74243 3.36667 5.03458 3.0625 5.40277 2.8375C5.77097 2.6125 6.17117 2.5 6.6034 2.5H25.8134V22.5ZM6.6034 20.05C6.7955 20.0167 6.9956 20 7.20371 20H23.4121V5H6.6034V20.05ZM19.8103 11.25H10.2053V8.75H19.8103V11.25Z" fill="#F78211"/>
+</svg>
+
+
+
+        </div>
+
+        <p class="font-bold text-[18px] text-[#111827] font-['Noto_Serif_JP']">製本グレードアップ</p>
+        <p class="text-[#4B5563] text-[14px] text-center">上質な紙質や装丁で、特別な一冊に <br>仕上げます。
+            
+        </p>
+    </div>
+
+
+    </div>
+    <span class="text-[#4B5563] text-[14px] block text-center mt-12 px-4 md:px-0">※ その他のオプションについても、お気軽にご相談ください</span>
+  </section>
+
+<section class="pb-20">
+    <div class="border-[#E5E7EB] border bg-[linear-gradient(135deg,_#F9FAFB_0%,_#FFFFFF_100%)] p-10 md:p-12 max-w-[896px] mx-4 rounded-[24px] md:mx-auto">
+
+        <div class="size-[64px] bg-[#F78211] rounded-full flex justify-center items-center mx-auto mb-6">
+           <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.93261 17.55C8.64446 18.3333 8.40434 19.075 8.21224 19.775C9.38084 18.8917 10.7496 18.35 12.3184 18.15C13.7911 17.95 15.1679 17.3833 16.4485 16.45C17.6972 15.5333 18.6657 14.4083 19.354 13.075L17.6251 11.25L20.5066 8.225C21.0349 7.675 21.6112 6.69167 22.2355 5.275C18.9538 5.80833 16.2004 7.125 13.9752 9.225C11.8781 11.225 10.1973 14 8.93261 17.55ZM21.0109 11.25L22.2115 12.5C21.7953 13.7833 21.147 14.9917 20.2665 16.125C19.322 17.325 18.2174 18.3083 16.9528 19.075C15.5921 19.9083 14.1433 20.425 12.6065 20.625C9.40486 21.0417 7.40382 23.3333 6.6034 27.5H4.20215L4.27419 27.025C4.64238 24.725 4.98656 22.8833 5.30672 21.5C5.85101 19.1 6.51535 16.95 7.29976 15.05C8.30829 12.65 9.53292 10.6 10.9737 8.9C12.6545 6.9 14.6396 5.36667 16.9288 4.3C19.5061 3.1 22.4677 2.5 25.8134 2.5C24.6128 6.25 23.4121 8.75 22.2115 10L21.0109 11.25Z" fill="white"/>
+            </svg>
+ 
+        </div>
+<h3 class=" text-[24px] md:text-[30px] font-bold text-center text-[#111827] font-['Noto_Serif_JP'] mb-8">フルオーダーメイドでお作りします</h3>
+<p class="text-[18px] text-center text-[#374151]">
+    お一人おひとりの人生は、かけがえのない特別なものです。
+</p>
+
+<p class="text-[18px] text-center text-[#374151]">
+    だからこそ、私たちは画一的なプランではなく、
+</p>
+
+<p class="text-[18px] text-center text-[#374151]">
+    お客様のご要望に合わせた完全オーダーメイドで制作いたします。
+</p>
+<p class="text-[18px] text-center text-[#374151] my-6">
+    ページ数、カラー・モノクロ、製本方法など、<br>
+すべてをお客様と一緒に決めていきます。
+</p>
+
+<div class="bg-[#FFF7ED] p-6 rounded-[16px]">
+    <p class="text-[18px] font-bold text-[#111827] text-center">まずはお気軽に <br class="md:hidden">
+        ご相談ください</p>
+    <p class=" text-[14px] md:text-[16px] text-center text-[#4B5563] mt-2 ">ご予算やご希望に応じて、最適なプランをご提案いたします</p>
+</div>
+<button class="text-[18px] font-bold text-white bg-[#F78211] rounded-full px-10 py-4 w-fit mt-8 mx-auto block">
+    <span class="shadow-[0_10px_15px_0_rgba(0,0,0,0.1)]"></span>無料相談を申し込む
+</button>
+    </div>
+</section>
+
+  <footer class="bg-[#111827] ">
+
+    <div class="max-w-[1280px] mx-auto px-4 py-12">
+        <div>
+            <h3 class="font-bold text-[24px] text-white font-['Noto_Serif_JP']">
+                <span class="text-[#F78211]">紡</span>
+                -TSUMU-
+            </h3>
+
+            <p class="text-[14px] text-[#9CA3AF] mt-4 ">
+                人生・資産を家族へ遺し、<br>
+紡ぐ物語制作サービス
+            </p>
+            <div class="py-8 border-b border-[#1F2937] flex-wrap flex gap-6 text-[14px] text-[#9CA3AF]">
+
+                <a href="">サービス紹介</a>
+                <a href="">制作の流れ</a>
+                <a href="">制作事例</a>
+                <a href="">料金プラン</a>
+                <a href="">お問い合わせ</a>
+                <a href="">プライバシーポリシー</a>
+    
+
+            </div>
+
+            <span class="text-[14px] text-[#9CA3AF] text-center block mt-8">© 2024 紡 -TSUMU-. All rights reserved. | ​
+Powered by Readdy</span>
+        </div>
+
+    </div>
+  </footer>
+<script>
+            const menubtn=document.getElementById('menu-btn');
+            const close=document.getElementById('close-btn');
+            const mobileMenu=document.getElementById('mobile-menu');
+
+            menubtn.addEventListener('click',()=>{
+
+                mobileMenu.classList.toggle('hidden');
+                close.classList.toggle('hidden');
+                menubtn.classList.add('hidden');
+            })
+
+            close.addEventListener('click',()=>{
+
+                mobileMenu.classList.toggle('hidden');
+                menubtn.classList.toggle('hidden');
+                close.classList.add('hidden');
+            })
+  </script>
+</body>
+</html>
