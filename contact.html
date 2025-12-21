@@ -49,7 +49,6 @@
 
         <div class="md:hidden">
             <img src="assets/menu-btn.svg" alt="" class="" id="menu-btn">
-            <img src="assets/close.svg" alt="" class="hidden" id="close-btn">
         </div>
 
         
@@ -57,8 +56,16 @@
 </header>
 
 <!-- mobile dropdown menu -->
-          <div class="fixed top-[66px] bg-white z-[999] w-full inset-x-0 p-4 hidden shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1),_0_10px_15px_-3px_rgba(0,0,0,0.1)]" id="mobile-menu">
-            <nav class="flex flex-col justify-center gap-6 md:hidden text-[14px] w-full">
+          <div class="fixed top-0 bg-white z-[999] w-full inset-x-0 p-4 hidden shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1),_0_10px_15px_-3px_rgba(0,0,0,0.1)]" id="mobile-menu">
+             <div class="flex items-center justify-between max-w-[1264px] mx-auto">
+        <!-- logo -->
+        <div>
+            <img src="assets/logo.svg" alt="">
+        </div>
+            <img src="assets/close.svg" alt="" class="hidden" id="close-btn">
+
+        </div>
+            <nav class="flex flex-col justify-center gap-6 md:hidden text-[14px] w-full mt-4">
                 <a href="#">サービス紹介</a>
                 <a href="#">制作の流れ</a>
                 <a href="#">制作事例</a>
@@ -67,7 +74,6 @@
 
             </nav>
         </div>
-
 
   <section class=" py-[30px] md:py-16 bg-[linear-gradient(135deg,_#FFFBEB_0%,_#FFFFFF_50%,_#FFF7ED_100%)]">
 <span class="text-[14px] font-bold text-[#F78211] text-center block mb-2">CONTACT</span>
@@ -163,7 +169,7 @@
                 placeholder="ご相談内容やご質問など、お気軽にお書きください。&#10;&#10;例：&#10;・父の人生を漫画にして家族に残したい&#10;・制作の流れや期間について詳しく知りたい&#10;・見積もりをお願いしたい"></textarea>
             <p class="text-[12px] text-[#6B7280] mt-1">0/500文字</p>
         </div>
- <button class="bg-[linear-gradient(90deg,_#D97706_0%,_#EA580C_100%)] text-[14px] md:text-[16px] font-bold text-white py-4 px-8 rounded-[8px] w-full ">
+ <button class="bg-[linear-gradient(90deg,_#D97706_0%,_#EA580C_100%)]   text-[14px] md:text-[16px] font-bold text-white py-4 px-8 rounded-[8px] w-full ">
 送信する
  </button>
               </div>
