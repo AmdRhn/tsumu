@@ -33,16 +33,18 @@
     <div class="flex items-center justify-between max-w-[1264px] px-4 h-[64px] mx-auto">
         <!-- logo -->
         <div>
+            <a href="index.html">
             <img src="assets/logo.svg" alt="">
+                </a>
         </div>
 
         <div>
-            <nav class="flex items-center gap-6 hidden md:flex">
-                <a href="#">サービス紹介</a>
-                <a href="#">制作の流れ</a>
-                <a href="#">制作事例</a>
-                <a href="#">料金プラン</a>
-                <a href="#" class="bg-[#F78211] text-white px-3 py-[8px] rounded-[16px]">お問い合わせ</a>
+            <nav class="flex items-center gap-2 hidden md:flex">
+                <a href="#service-overview" class="hover:bg-[#F78211] hover:text-white rounded-full px-4 py-2 transition-all duration-300 ease-out">サービス紹介</a>
+                <a href="#production-flow" class="hover:bg-[#F78211] hover:text-white rounded-full px-4 py-2 transition-all duration-300 ease-out">制作の流れ</a>
+                <a href="works.html" class="hover:bg-[#F78211] hover:text-white rounded-full px-4 py-2 transition-all duration-300 ease-out">制作事例</a>
+                <a href="plan.html" class="hover:bg-[#F78211] hover:text-white rounded-full px-4 py-2 transition-all duration-300 ease-out">料金プラン</a>
+                <a href="contact.html" class="bg-[#F78211] hover:bg-white hover:text-black hover:border transition-all duration-300 ease-out text-white px-3 py-[8px] rounded-[20px]">お問い合わせ</a>
 
             </nav>
         </div>
@@ -60,17 +62,19 @@
              <div class="flex items-center justify-between max-w-[1264px] mx-auto">
         <!-- logo -->
         <div>
+            <a href="index.html">
             <img src="assets/logo.svg" alt="">
+            </a>
         </div>
             <img src="assets/close.svg" alt="" class="hidden" id="close-btn">
 
         </div>
             <nav class="flex flex-col justify-center gap-6 md:hidden text-[14px] w-full mt-4">
-                <a href="#">サービス紹介</a>
-                <a href="#">制作の流れ</a>
-                <a href="#">制作事例</a>
-                <a href="#">料金プラン</a>
-                <a href="#" class=" w-fit">お問い合わせ</a>
+                <a href="#service-overview">サービス紹介</a>
+                <a href="#production-flow">制作の流れ</a>
+                <a href="works.html">制作事例</a>
+                <a href="plan.html">料金プラン</a>
+                <a href="contact.html" class=" w-fit">お問い合わせ</a>
 
             </nav>
         </div>
@@ -96,12 +100,12 @@
       
 
 <div class="flex flex-col md:flex-row items-center gap-5 px-4 min-[1240px]:px-0">
-<button class="text-[23px] font-bold text-white bg-[#F78211] hover:bg-white hover:border hover:text-black transition-all duration-300 rounded-full px-6 py-[19px] w-full md:w-[unset]">
+<a href="contact.html" class="text-[23px] font-bold text-white bg-[#F78211] hover:bg-white hover:border hover:text-black transition-all duration-300 rounded-full px-6 py-[19px] w-full md:w-[unset]">
     <span class="shadow-[0_10px_15px_0_rgba(0,0,0,0.1)]"></span>まずは相談してみる
-</button>
-<button class="text-[23px] font-bold text-[#1F2937] bg-white hover:bg-[#F78211] hover:text-white transition-all duration-300 rounded-full px-6 py-[19px] border border-[#D1D5DB] w-full md:w-[unset]">
+</a>
+<a href="#service-overview" class="text-[23px] font-bold text-white bg-[#F78211] hover:bg-white hover:border hover:text-black transition-all duration-300 rounded-full px-6 py-[19px] border border-[#D1D5DB] w-full md:w-[unset]">
     <span class="shadow-[0_10px_15px_0_rgba(0,0,0,0.1)]"></span>サービスを詳しく見る
-</button>
+</a>
 </div>
 
 <div class="flex flex-col md:flex-row  gap-6 items-center px-4 min-[1240px]:px-0">
@@ -244,7 +248,7 @@
 
   </section>
 
- <section class="py-16">
+ <section class="py-16" id="service-overview"   >
 <span class="text-[14px] font-bold text-[#F78211] text-center block mb-2">SERVICE OVERVIEW</span>
     <h2 class="font-bold text-[36px] md:text-[48px] text-center px-4 md:px-0" >人生インタビュー</h2>
     <div class=" flex justify-center" >
@@ -431,7 +435,7 @@
 
  </section>
  
-   <section class="bg-[#FFF7ED4D] py-16 bg-[linear-gradient(0deg,_#FFFFFF_0%,_rgba(255,247,237,0.3)_100%)]">
+   <section class="bg-[#FFF7ED4D] py-16 bg-[linear-gradient(0deg,_#FFFFFF_0%,_rgba(255,247,237,0.3)_100%)]" id="production-flow">
    <span class="text-[14px] font-bold text-[#F78211] text-center block mb-2">Process Flow</span>
     <h2 class="font-bold text-[36px] md:text-[48px] text-center px-4 md:px-0" >制作の流れ</h2>
     <div class=" flex justify-center" >
@@ -583,26 +587,29 @@
      <p class="text-[20px] text-white/90 text-center px-4 pb-[32px]">初回相談は無料です。お気軽にお問い合わせください。</p>
 
      <div class="w-full md:w-fit mx-auto flex flex-col items-center gap-4 pb-[48px] px-4 md:px-0 md:flex-row">
-        <button class="bg-white rounded-full hover:bg-white/0 hover:border hover:text-white transition-all duration-300 px-6 py-4 text-[#F78211] font-bold text-[18px] w-full md:w-[unset]">
-            <span class="[text-shadow:0_4px_6px_rgba(0,0,0,0.1)]">
-            お問い合わせフォームへ
-           
-            </span>
-        </button>
-
-         <button class="text-white rounded-full px-6 py-4 bg-[#F78211] hover:bg-white hover:text-[#F78211] transition-all duration-300 font-bold text-[18px] border border-[2px] w-full md:w-[unset]">
+       
+       <a href="works.html" class="text-white rounded-full px-6 py-4 bg-[#F78211] hover:bg-white hover:text-[#F78211] transition-all duration-300 font-bold text-[18px] border border-[2px] w-full md:w-[unset]">
             <span class="[text-shadow:0_4px_6px_rgba(0,0,0,0.1)]">
             制作事例を見る
            
             </span>
-        </button>
+        </a>
+       
+        <a href="contact.html" class="rounded-full bg-[#F78211] text-white hover:bg-white hover:text-[#F78211] transition-all duration-300 px-6 py-4 text-[#F78211] border border-[2px] font-bold text-[18px] w-full md:w-[unset]">
+            <span class="[text-shadow:0_4px_6px_rgba(0,0,0,0.1)]">
+            お問い合わせフォームへ
+           
+            </span>
+        </a>
 
-         <button class="text-white rounded-full px-6 py-4 bg-[#F78211] hover:bg-white hover:text-[#F78211] transition-all duration-300 font-bold text-[18px] border border-[2px] w-full md:w-[unset]">
+         
+
+         <a href="plan.html" class="text-white rounded-full px-6 py-4 bg-[#F78211] hover:bg-white hover:text-[#F78211] transition-all duration-300 font-bold text-[18px] border border-[2px] w-full md:w-[unset]">
             <span class="[text-shadow:0_4px_6px_rgba(0,0,0,0.1)]">
             料金プランを見る
            
             </span>
-        </button>
+        </a>
      </div>
 
      <div class="grid grid-cols-1 md:grid-cols-3 max-w-[896px] gap-6  mx-auto px-4 min-[896px]:px-0">
@@ -663,11 +670,11 @@
             </p>
             <div class="py-8 border-b border-[#1F2937] flex-wrap flex gap-6 text-[14px] text-[#9CA3AF]">
 
-                <a href="">サービス紹介</a>
-                <a href="">制作の流れ</a>
-                <a href="">制作事例</a>
-                <a href="">料金プラン</a>
-                <a href="">お問い合わせ</a>
+                <a href="#service-overview">サービス紹介</a>
+                <a href="#production-flow">制作の流れ</a>
+                <a href="works.html">制作事例</a>
+                <a href="plan.html">料金プラン</a>
+                <a href="contact.html">お問い合わせ</a>
                 <a href="">プライバシーポリシー</a>
     
 
